@@ -14,5 +14,5 @@ def upload_file(request):
     else:
         form = ImageUploadForm()
         images = ImageUplaodModel.objects.all()
-    return render(request,'imageupload.html',{'form':form,'images':images})
+    return render(request,'index.html',{'form':form,'images':images})
 
